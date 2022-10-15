@@ -3,6 +3,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 
 import { formatMoney } from '../utils/formatMoney'
+import './StoreItem.scss'
 
 type StoreItemProps = {
     id: number,
@@ -19,7 +20,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     const quantity = getItemQuantity(id)
     return (
         <Card className='h-100'>
-            <CardImg variant='top' src={imgUrl} height='200px' style={{ objectFit: 'cover' }} />
+            <CardImg className='store-item-img' variant='top' src={imgUrl} height='200px' />
             <Card.Body className='d-flex flex-column'>
                 <Card.Title className='d-flex justify-content-between align-items-baseline mb-4'>
                     <span className='fs-2'>{name}</span>

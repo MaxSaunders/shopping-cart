@@ -7,7 +7,7 @@ import logo from '../assets/logo_white.png'
 import './NavbarHeader.scss'
 
 export const NavbarHeader = () => {
-    const { openCart, closeCart, cartQuantity } = useShoppingCart()
+    const { openCart, cartQuantity } = useShoppingCart()
     return (
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" sticky='top' className='p-0'>
             <Container>

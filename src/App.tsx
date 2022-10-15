@@ -6,7 +6,6 @@ import { NavbarHeader } from './components/NavbarHeader'
 import { Home } from './pages/Home'
 import { Store } from './pages/Store'
 import { About } from './pages/About'
-import './App.css'
 
 function App() {
   return (
